@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="Inscription PFE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        >
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="307dp"
+            android:layout_height="72dp"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="307dp"
+            android:layout_height="72dp"
+            android:ems="10"
+            android:hint="Prénom"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="309dp"
+            android:layout_height="72dp"
+            android:ems="10"
+            android:hint="Tel"
+            android:inputType="number" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="307dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="307dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="307dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="Mot de passe"
+        android:inputType="textPassword" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    >
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:text="Valider"
+        android:onClick="addUser"
+        />
+
+    <Button
+        android:id="@+id/annuler"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Annuler"
+        android:onClick="annuler"
+        />
+</LinearLayout>
+
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:onClick="show"
+        android:text="List des étudiants" />
+
+
+
+</LinearLayout>
